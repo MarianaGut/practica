@@ -18,7 +18,7 @@ with tab1:
     conteo=wage["estado civil"].value_counts()
     ax[2].bar(conteo.index,conteo.values)
     ax[3].hist(wage["salario"])
-
+    fig.tight_layout()
     st.pyplot(fig)
 
 
